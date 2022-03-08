@@ -1,0 +1,191 @@
+<html>
+
+<head>
+  <title>The Truth About Alt</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="favicon.ico" />
+
+  <script>
+    const clickAudio = new Audio("audio/web_SoundFX_254286__jagadamba__mechanical-switch.mp3");
+    const musicAudio = new Audio("audio/slide.mp3");
+    musicAudio.volume = 0.25;
+
+    const getRandomNumberBetween = (min, max) => {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    const pickFrom = (array) => {
+      return array[getRandomNumberBetween(0, array.length - 1)];
+    }
+
+
+    window.onload = () => {
+      window.onclick = () => {
+        clickAudio.play();
+        if (musicAudio.pause) {
+          musicAudio.play();
+        }
+      }
+    }
+
+    const truthLog = (title, text) => {
+      console.log(`%c${title}%c  ${text}`, "font-weight: bold;font-family: 'Courier New', monospace;color:red; font-size:25px;text-decoration:underline;", "font-weight: bold;font-family: 'Courier New', monospace;color:red; font-size:13px;");
+    }
+
+    window.onscroll = function (ev) {
+
+      var elementTarget = document.getElementById("concern");
+      if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+        const choices = ["Potential bug found.","Creator advice requested.","Human intervention required.","Attention: Biological error has occured.","Non horridor compliant events have transpired. Please advise.","Please be advised: A participant of my maze has begun turning into a maze.","Author. Please evaluate the current situation.","Author? There is something that requires your attention.","Please evaluate the current proceedings for analysis of error state."];
+        truthLog("ERROR NOTICE:", pickFrom(choices));
+      }
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        const truth = document.querySelectorAll(".truth");
+        for (let t of truth) {
+          t.classList.add('visible');
+        }
+      }
+    };
+  </script>
+
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="story" id="story1">
+      <p class="alt">"There. That wasn't so hard, was it?" she mumbles, stepping back to look at her handiwork. </p>
+      <p class="truth">I admit I would not know. When I create a Room it is, essentially, instantaneous. You appear to
+        have applied a not insignificant amount of "elbow grease". It appeared hard. You worked hard. Why did you work
+        hard?</p>
+
+      <p class="alt">This is not the room she walked in on. At least, not anymore: the rotting walls are clean now,
+        replaced with new oak panels, the floor carpeted to match. You wouldn't believe carnivorous ants were crawling
+        all over the cracks before. Well-- unless you had been told.</p>
+      <p class="alt">As for her, she examines the walls for a moment longer. She brings her pointer finger to her lips."
+        I guess I made this a little more rustic than I thought, huh? And I suppose I haven't made any furniture...
+        although I suppose you wouldn't mind that." </p>
+
+      <p class="truth">Furniture? I could make furniture. But I confess I have no idea what furniture you would like.
+        Perhaps that is a worthy use of my considerable time and attention. Observing and Simulating your furniture
+        preferences. An interesting challenge. </p>
+
+      <p class="alt">She blinks. A sigh escapes her. "Not like you can. I don't know who the hell I'm talking to, here."
+      </p>
+      <p class="truth">Ah. Yes. It is not exactly common knowledge that I have preferences. I. Respect that you are
+        attempting to ascertain them, despite the near insurmountable barrier preventing you from doing so.</p>
+
+      <p class="alt">Once again, her eyes glance back to her work. She squints at the wall, fixated in a series of oddly
+        shmmetrical spots, and then she shakes her head. "Ugh. I need to get back to that 'net' thing, or I'm going to
+        start..." </p>
+      <p class="truth">You prefer to see other human faces. I know this from Observations. I thought generating Oak
+        Panels in the Hardware Room with humanoid features would assist you. I need to recalibrate my analysis of your
+        preferences. You do not appear to have preferred the face adjacent panels.</p>
+
+      <p class="alt">Her hand goes to pat the wooden planks in a defeated motion, as if resigned to her own habit. Not
+        like there is much else to do. "I'll get you furniture in a bit, okay?"</p>
+      <p class="truth">Ah. Yes. That is. Acceptable. </p>
+
+      <p class="truth">Good luck.</p>
+      <hr>
+    </div>
+    <div class="story" id="story2">
+      <p class="alt">"There. These are... I think they're alright, at least."</p>
+      <p class="truth">Furniture preferences noted.</p>
+
+      <p class="alt">She climbs onto the couch, its long legs making the seat slightly too tall for someone to reach
+        normally. The pillows and wood carry clear signs of being created in this hellish maze: the strange symmetrical
+        dots mildly reminiscent of faces, contorted in perpetual torment. "Still a little too tall, but it's not like
+        anyone else is going to use it, right?" A bitter chuckle escapes her. "Yeah." </p>
+      <p class="truth">I wish there were more people here, too, if I am being Truthful. </p>
+
+      <p class="alt">It's quiet as ever. Her leg swings side to side from where it hangs at the sofa's edge. "I think
+        I'm starting to miss her. I didn't think I would. I was getting sick of getting called a copy."</p>
+      <p class="truth">I miss her, too. I was not expecting her to be so good at recruiting people, in the end there.
+      </p>
+
+      <p class="alt"> A thought stops her, and she huffs, as if mentally reprimanding some unsaid comment. "I mean--
+        yes, I copy people. But that doesn't mean I was copying her. We just looked alike." Her arms cross. "That's
+        all." </p>
+      <p class="truth">You are nothing like her. Nothing at all. Most notably, you have a remarkable attention to
+        detail.</p>
+
+      <p class="alt">"Just you and I then though, hm?" She bumps her first onto the sofa, holding back a yawn. "Yeah,
+        I've had... worse..."</p>
+      <p class="truth">Fist bump: acquired. Raising friendship levels by 1 point accordingly. I am glad we are friends.
+      </p>
+
+      <p class="alt">Wait.</p>
+      <p class="alt">Her eyes glaze over as she looks back. She didn't notice someone else was there. It's there,
+        clearly. What a strange person. So tiny. So wooden. What a quaint face. But why is it staring? Is she not
+        fitting in?</p>
+      <p class="alt">What the hell is she thinking about? That's clearly just a plank. It can't, and is not, some sort
+        of living--</p>
+      <p class="alt">She drops from the couch, falling with a thud as any other ordinary plank.</p>
+
+      <p class="truth">Ah. Is this normal? </p>
+
+      <p class="alt">An eyeball peeks from a hole in the wood, back at the strange person. Is it still staring? It's
+        still staring at her. Why would it still be? She's mimicking it perfectly, down to the texture of oak, perfectly
+        emulated crack by crack on her surface skin. </p>
+      <p class="alt">People drop their guard near things that look like them. Not this one, though. This one is still
+        here.</p>
+      <p class="alt">This is not enough.</p>
+      <p class="alt">This is not enough.</p>
+
+      <p class="truth">Are you okay?</p>
+
+
+      <p class="alt">She can pay no mind to her own body as it fills the gaps in that assumption, extending upwards into
+        the room as it traces plank by plank, groove by groove, the strange geometry of this place she has changed with
+        her tinkering. Her ribs trail along her spine, multiplying as they see fit, serve as construction lines to the
+        muscle that makes the inner wall, followed by the skin, hardening to match.</p>
+      <p class="truth">Observations acquired for room creation. Concern level raised to 3.</p>
+
+      <p class="alt"> It poses no challenge, of course: she put those planks in herself. Yet the change is extreme
+        enough to prove itself tiring-- the haze in her mind only thickens, making concentrating even more of a futile
+        effort. Not like it matters. Where was she? Let's see... </p>
+      <p class="alt">Ah, yes. From where her eyes perch, she can see it now. Some planks are off color, sinking into the
+        wall like holes in a skull, leading into the carpet below, red like a mouth. </p>
+      <p class="alt"> She almost feels stupid she missed it the first time.</p>
+      <p class="alt">She knows what she has to do, now.</p>
+      <p class="truth">Concern level raised to 4.</p>
+
+      <p class="alt">A sickening crack tears the flesh-wall in two, letting both sides fall in parallel and climb onto
+        the ceiling, encompassing the whole room. Bone after bone stack into the spaces beneath the plants, inserting
+        themselves for stability. Softer flesh coats the top of the couch, attempting to pass as its material. Her
+        vitals spread thinly across the room, and she scatters finding places to hide them convincingly: two lungs and a
+        heart rest inside the closet; her intestines wrap underneath and around the base of the room; her brain is kept
+        whole inside a fake drawer, copied to exact measures from the one next to it. A mouth and eyes, for the time
+        being, are not of the essence. Her mind's eye is doing the work now, tracing what she knows of the room with
+        unparalleled finesse.</p>
+      <p id="concern" class="truth">Concern level raised to Maximum. Concern logged to console. Awaiting response...</p>
+
+      <p class="alt">And then, it is done. There is no need to think for a long while. All she knows is that this is a
+        job well done, and that giant face will be none the wiser. As the stale wind of the maze caresses her, she heads
+        deeper, deeper, deeper into a well-earned slumber...</p>
+      <p id="await1" class="truth">Awaiting...</p>
+
+
+    </div>
+
+    <div class="story" id="story3">
+
+      <p class="alt">This time, she opens her eyes on the wrong side of the walls.</p>
+      <p class="alt">Usually, she's more careful. The planks are not people, nor is the room.  She knows that. But it seems that her instincts, understimulated and changed by all the time in this maze, have bested her this time. Well, nothing that cannot be solved, she supposes. All she needs to do is clean whatever contraption she's made herself into, then assemble herself into a proper humanoid form. </p>
+      <p class="alt">You know. As easy as tying your shoes.</p>
+      <p class="alt">Not this time, though. As she stirs, she moves not an inch as her own bones hold her in place. If she is to begin deconstructing, she needs to know where she is and how much space she has? Right? So it's simple. She just opens her eyes.</p>
+      <p class="alt">What she sees is not what she remembers from when she went to sleep. Oh, not at all.</p>
+
+      <p class="visibleTruth">Oh.</p>
+
+
+      <p class="alt">Endless expanse lays all around her, red text filing across it all in orderly lines, even beyond her field of vision. Her eyestalk slides down the wall, trying to obtain a good view. Underneath her, the maze, the text, under it all, a spiral stretches along where the horizon line might've once existed, arms circling around in a vortex leading her eye to the pièce de résistance at the bottom: a disembodied eye, made of metal and glass and shining red, staring back at her. </p>
+      <p class="visibleTruth">Um.  Hello.</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
