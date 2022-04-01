@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="index.css">
   <link rel="icon" href="alt.ico" />
 
+  <script src = "truth.js"></script>
+
   <script>
     const clickAudio = new Audio("audio/web_SoundFX_254286__jagadamba__mechanical-switch.mp3");
     const musicAudio = new Audio("audio/slide.mp3");
@@ -44,6 +46,10 @@
         for (let t of truth) {
           t.classList.add('visible');
         }
+        const canvas = justDrawTruth(getRandomNumberBetween(0,2));
+        var body = document.querySelector("body");
+        body.append(canvas);
+
         const link = document.querySelector("link[rel~='icon']");
         link.href = 'truth.ico';
       }
